@@ -1,0 +1,15 @@
+checklists:
+1. https://ahmed-tarek.gitbook.io/security-notes/pentesting/wep-pen/owsap-top-10/broken-access-control/authentication-checklist
+2. (reset pass) https://ahmed-tarek.gitbook.io/security-notes/pentesting/wep-pen/owsap-top-10/broken-access-control/reset_password_checklist
+3. (register page) https://ahmed-tarek.gitbook.io/security-notes/pentesting/wep-pen/checklists/register-page
+4. https://github.com/Az0x7/vulnerability-Checklist/blob/main/Authentication/authentication.md
+5. https://github.com/Az0x7/vulnerability-Checklist
+6. https://amitp200.medium.com/thinks-to-look-for-authentications-bugs-68a0bafd10c2  //Things to look for Authentications Bugs…//
+7. https://workbook.securityboat.net/Bug%20Bounty/bug-bounty-checklist-for-web-app/
+8. https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html
+9. https://spyboy.blog/2025/04/30/the-ultimate-guide-to-finding-authentication-bypass-weak-authentication-logic-vulnerabilities-step-by-step-payloads-tools/
+10 https://infosecwriteups.com/advanced-web-application-security-checklist-6f7ed5917c72
+11 https://www.jit.io/resources/app-security/the-essential-api-security-checklist
+12 https://www.intigriti.com/researchers/blog/hacking-tools/broken-authentication-a-complete-guide-to-exploiting-advanced-authentication-vulnerabilities
+13 https://www.bugcrowd.com/blog/mfa-security-part-1-how-attackers-bypass-multi-factor-authentication/
+14 https://www.google.com/search?q=how+hacker+check+register+page+medium&sca_esv=6b586cb292188507&rlz=1C1YTUH_enBD1079BD1079&biw=1366&bih=641&ei=GkhSaIvmItKJwbkP7PWOiAU&ved=0ahUKEwiL292lmPqNAxXSRDABHey6A1E4FBDh1QMIEA&uact=5&oq=how+hacker+check+register+page+medium&gs_lp=Egxnd3Mtd2l6LXNlcnAiJWhvdyBoYWNrZXIgY2hlY2sgcmVnaXN0ZXIgcGFnZSBtZWRpdW0yBRAhGKABMgUQIRigAUjFywFQwQdYnsgBcA14AZABBJgBpAOgAYCRAaoBBjMtNTIuMbgBA8gBAPgBAZgCOaACpX2oAhTCAgoQABiwAxjWBBhHwgIHECEYoAEYCsICBBAhGBXCAgYQABgWGB7CAg4QABiABBiRAhixAxiKBcICCxAAGIAEGJECGIoFwgIFEAAYgATCAgcQABiABBgKwgIUEAAYgAQYkQIYtAIYigUY6gLYAQHCAhQQABiABBjjBBi0AhjpBBjqAtgBAcICEBAuGAMYtAIY6gIYjwHYAQLCAhAQABgDGLQCGOoCGI8B2AECwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBcICCBAAGIAEGLEDwgIKEAAYgAQYQxiKBcICCxAuGIAEGLEDGIMBwgIOEC4YgAQYsQMYgwEY1ALCAg4QLhiABBixAxiDARiKBcICBRAuGIAEwgIIEC4YgAQY1ALCAgoQABiABBhGGP8BwgIWEAAYgAQYRhj_ARiXBRiMBRjdBNgBAsICCBAAGIAEGMcDwgIJEAAYFhjHAxgewgILEAAYgAQYhgMYigXCAggQABiABBiiBMICCBAAGBYYChgewgIFEAAY7wXCAggQABiiBBiJBcICBRAhGJ8FwgIEECEYCpgDDPEFRyvUoqWoUGSIBgGQBgi6BgQIARgHugYGCAIQARgKkgcJMTMuMy00My4xoAfroAKyBwYzLTQzLjG4B5t8wgcNMC4yLjI0LjI5LjEuMcgH9AM&sclient=gws-wiz-serp
