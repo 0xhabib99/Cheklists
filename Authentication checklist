@@ -1,0 +1,168 @@
+## Authentication checklist
+by:
+https://ahmed-tarek.gitbook.io/security-notes/pentesting/wep-pen/owsap-top-10/broken-access-control/authentication-checklist
+Test for User Enumeration:
+
+    Assess various input fields for user enumeration vulnerabilities.
+
+
+Post Authentication URL Access:
+
+    Check if post-authentication URLs are directly accessible without any session bound to them. If the URL is stolen, guessable, or brute-forceable, it may lead to account takeover.
+
+
+Test for Authentication Bypass:
+
+    Verify if authentication can be bypassed through URL manipulation or session fixation.
+
+
+Test for Brute Force Protection:
+
+    Check if the application implements protections against brute force login attempts.
+
+
+Test Password Quality Rules:
+
+    Ensure the application enforces password complexity and strength requirements.
+
+Change the password to only numerical characters.
+
+Change the password to only lowercase letters.
+
+Change the password to common passwords.
+
+Change the password to short passwords.
+
+Observe that the application has a weak or nonexistent password policy.
+
+
+Test Remember Me Functionality
+
+    Evaluate if the "Remember Me" feature is secure and does not expose session tokens.
+
+
+Test for Autocomplete on Password Forms/Input
+
+    Confirm that password fields do not have autocomplete enabled to protect user credentials.
+
+
+Test Password Reset and/or Recovery
+
+    Assess the security of the password reset and recovery process.
+
+
+Test Password Change Process
+
+    Verify if the password change process is secure and requires proper authentication.
+
+
+Lack of Password Confirmation
+
+    Test if password confirmation is necessary for actions such as changing the email address, changing the password, deleting the account, and managing 2FA.
+
+
+Lack of Verification Email
+
+    Check that an email verification is necessary during the registration process.
+
+
+Test CAPTCHA Implementation
+
+    Ensure that CAPTCHA is implemented correctly on forms to prevent automated submissions.
+
+
+CAPTCHA Bypass - X-Forwarded-For
+
+    Attempt to bypass the CAPTCHA check by injecting a random value into the X-Forwarded-For header.
+
+
+No Rate Limiting on a Form
+
+    Send a form and intercept the request with Burp Proxy. Send the request to Intruder and repeat it 20-30 times to observe if there are any restrictions.
+
+
+No Rate Limiting or CAPTCHA on Login Page
+
+    Go to the login page and send unsuccessful login attempt requests to Burp Intruder. Change the password values for brute force attempts and observe the response to see if the account is locked.
+
+
+Username Email Address Enumeration
+
+    Go to password reset/login/register areas and enter existing and non-existing username/email addresses. Observe the error message and check if the error messages leak information about the existence of username/email addresses.
+
+
+Weak Registration Implementation over HTTP
+
+    Intercept the registration request to the application via Burp. Observe that the registration request is sent over HTTP instead of HTTPS.
+
+
+Secure Data Transport
+
+    Search for sensitive data on the login page. Send a form and intercept the request with Burp Proxy. Intercept the request with Wireshark. Ensure that the data transport is encrypted.
+
+
+Broken Authentication Session Token Bug
+
+Create a courier account or use an existing one. 
+
+Confirm your email address. 
+
+Log out from your account and request a password reset code.
+
+ Do not use the code sent to your email address. 
+
+In a new tab or browser, log back into your account. 
+
+Go to account settings and change your password. 
+
+Check your email for the password reset code from step 3. 
+
+Change your password using that reset code. 
+
+You can see that your password has been changed successfully.
+
+
+Broken Authentication and Session Management
+
+Create a Phabricator account using the email address "a@x.com".
+
+Log out and request a password reset link (do not use this link). 
+
+Log in using the original password and update your email address to "b@x.com"; verify this change and remove "a@x.com". 
+
+Log out and use the password reset link mailed to "a@x.com" in step 2. 
+
+Your password will be changed, even though the reset link was not used for the original account.
+
+
+Test Multi-Factor Authentication
+
+Check if multi-factor authentication is available and implemented securely.
+
+
+Test for Logout Functionality Presence
+
+Verify that logout functionality is available and effectively terminates the session.
+
+
+Test for Cache Management on HTTP
+
+Check for proper cache management headers (e.g., Pragma, Expires, Max-age) to prevent caching of sensitive data.
+
+
+Test for Default Logins
+
+Assess the presence of default login credentials and ensure they are changed.
+
+
+Test for User-Accessible Authentication History
+
+Evaluate if users can access their authentication history and if it is securely managed.
+
+
+Test for Out-of-Channel Notification of Account Lockouts and Successful Password Changes
+
+Verify if notifications are sent to users for critical account activities, such as lockouts and password changes.
+
+
+Test for Consistent Authentication Across Applications with Shared Authentication Schema / SSO
